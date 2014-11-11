@@ -1,0 +1,26 @@
+[
+	{
+		"question": "what is the answer?",
+		"options": [
+			{"answer": "answer1", "correct": true},
+			{"answer": "answer2", "correct": false},
+			{"answer": "answer3", "correct": false}
+		]
+	},
+	{
+		"question": "what is the answer2?",
+		"options": [
+			{"answer": "answer1", "correct": false},
+			{"answer": "answer2", "correct": true},
+			{"answer": "answer3", "correct": false}
+		]
+	},
+	{
+		"question": "what is the answer3?",
+		"options": [
+			{"answer": "answer1", "correct": false},
+			{"answer": "answer2", "correct": false},
+			{"answer": "answer3", "correct": true}
+		]
+	}
+]
