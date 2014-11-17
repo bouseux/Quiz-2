@@ -12,10 +12,10 @@ Done
 * Questions in random order
 * Saves each answer
 * displays how many were correct when quiz finishes
+* Localstorage
 
 Future
 ------
 
 * Implement Handlebars.js
-* Localstorage
 * Timer based score
