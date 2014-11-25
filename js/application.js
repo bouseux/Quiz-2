@@ -91,13 +91,14 @@ $(document).ready(function() {
 			// loops through all inputs
 			$('input[name=radiobuttons]').each(function() {
 
-				for (var h = 0; h < funcs.answers.length; h++) {
-
+				for (var h = 0; h <= funcs.answers.length; h++) {
 					// checks if radio localstorage is not null
-					if (localStorage.getItem('radio' + (funcs.arrayPos+1)) !== null) {
+					if (localStorage.getItem('radio' + (funcs.arrayPos+1)) !== null && funcs.answers[funcs.arrayPos] !== undefined) {
 
+						var raddo = JSON.parse(localStorage.getItem('radio' + (funcs.arrayPos+1)));
+			
 				 		// checks if answer and current input is the same
-					 	if (funcs.answers[h].number === $(this).data('number') && funcs.answers[h].answer === $(this).data('answer') && funcs.answers[h].correct === $(this).data('correct')) {
+					 	if (raddo.number === $(this).data('number') && raddo.answer === $(this).data('answer') && raddo.correct === $(this).data('correct')) {
 					 		// checks radiobutton
 					 		$(this).attr('checked', 'checked');
 					 	}
